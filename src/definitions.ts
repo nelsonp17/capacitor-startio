@@ -1,3 +1,15 @@
+export interface initParamOption {
+    returnAdsEnabled?: boolean;
+    isDev?: boolean;
+    appId: String;
+}
+
+export interface GetResultString {
+    result: String;
+}
+
 export interface CapacitorStartIOPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+    initialize(options: initParamOption): Promise<void>;
+    loadInterstitial(): Promise<GetResultString>;
+    showInterstitial(): Promise<GetResultString>;
 }
