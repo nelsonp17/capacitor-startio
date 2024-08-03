@@ -1,11 +1,11 @@
-# capacitor-startio
+# @capacitor/startio
 
 Plugin para capacitor de Start.io, para agregar anuncios publicitarios a tu app de android con capacitor
 
 ## Install
 
 ```bash
-npm install capacitor-startio
+npm install @capacitor/startio
 npx cap sync
 ```
 
@@ -150,3 +150,5 @@ Next steps:
   - Continue following these docs for plugin development: https://capacitorjs.com/docs/plugins/workflow
   - Questions? Feel free to open a discussion: https://github.com/ionic-team/capacitor/discussions
   - Learn more about the Capacitor Community: https://github.com/capacitor-community/welcome 💖
+
+  npm install usuario/repositorio

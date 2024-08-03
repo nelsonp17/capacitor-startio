@@ -1,6 +1,6 @@
 {
-  "name": "capacitor-startio",
-  "version": "0.0.1",
+  "name": "@capacitor/startio",
+  "version": "0.0.2",
   "description": "Plugin para capacitor de Start.io, para agregar anuncios publicitarios a tu app de android con capacitor",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
