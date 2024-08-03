@@ -31,7 +31,13 @@ import com.startapp.sdk.adsbase.StartAppSDK;
 public class CapacitorStartIOPlugin extends Plugin {
     public Context context = null;
     public StartAppAd interstitialAd = new StartAppAd(getContext());
-    private CapacitorStartIO implementation = new CapacitorStartIO();
+    private CapacitorStartIO implementation;
+
+    @Override
+    public void load() {
+        implementation = new CapacitorStartIO(getActivity());
+    }
+    
     private String APPLICATION_ID = "";
     private boolean isDev = true;
     private boolean returnAdsEnabled = true;
