@@ -16,7 +16,7 @@ import com.startapp.sdk.adsbase.StartAppAd;
 import com.startapp.sdk.adsbase.StartAppSDK;
 
 @CapacitorPlugin(
-        name = "CapacitorStartIO",
+        name = "Startio",
         permissions = {
                 @Permission(
                         alias = "network",
@@ -37,7 +37,7 @@ public class CapacitorStartIOPlugin extends Plugin {
     public void load() {
         implementation = new CapacitorStartIO(getActivity());
     }
-    
+
     private String APPLICATION_ID = "";
     private boolean isDev = true;
     private boolean returnAdsEnabled = true;
@@ -83,7 +83,7 @@ public class CapacitorStartIOPlugin extends Plugin {
         adInterstitialExecutor.show(call);
     }
 
-    @PluginMethod
+    /**@PluginMethod
     public void prepareRewardVideoAd(final PluginCall call) {
         //adRewardExecutor.prepareRewardVideoAd(call);
     }
@@ -91,7 +91,7 @@ public class CapacitorStartIOPlugin extends Plugin {
     @PluginMethod
     public void showRewardVideoAd(final PluginCall call) {
         //adRewardExecutor.showRewardVideoAd(call);
-    }
+    }**/
 
 
     public void setRequestConfiguration(final PluginCall call) {

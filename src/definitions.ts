@@ -8,7 +8,7 @@ export interface GetResultString {
     result: String;
 }
 
-export interface CapacitorStartIOPlugin {
+export interface StartioPlugin {
     initialize(options: initParamOption): Promise<void>;
     loadInterstitial(): Promise<GetResultString>;
     showInterstitial(): Promise<GetResultString>;
